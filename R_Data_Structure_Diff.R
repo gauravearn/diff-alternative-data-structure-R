@@ -14,3 +14,9 @@ numeric(0)
 + }
 > my_sub_vector
 [1] 3 4 3 6
+# if you want to implement this as a function
+subfunction <- function(x){
+    for (i in seq_along(x)-1){
+        print(x[i+1]-x[i])
+    }
+}
